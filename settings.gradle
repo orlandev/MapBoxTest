@@ -11,7 +11,7 @@ dependencyResolutionManagement {
             }
             credentials {
                 username = 'mapbox'
-                password ='sk.eyJ1IjoicXUzNXQ2NCIsImEiOiJja3MzbWlrbTQxaXZ1MnBwanJid3dtOXU0In0.x4np2vK16I2-f1dhxVhHJQ'
+                password = rootProject.properties['MAPBOX_DOWNLOADS_TOKEN'] ?: ""
             }
         }
     }
