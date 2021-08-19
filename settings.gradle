@@ -1,0 +1,20 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = 'mapbox'
+                password ='sk.eyJ1IjoicXUzNXQ2NCIsImEiOiJja3MzbWlrbTQxaXZ1MnBwanJid3dtOXU0In0.x4np2vK16I2-f1dhxVhHJQ'
+            }
+        }
+    }
+}
+rootProject.name = "MapBoxTest"
+include ':app'
