@@ -130,8 +130,8 @@ class BaseMapFragment : Fragment() {
                 val pointsAnnotationOptions = points.map { point ->
                     val futureTarget: FutureTarget<Bitmap> = Glide.with(requireContext())
                         .asBitmap()
-                        .load(R.drawable.marker_arquitectos)
-                        .submit(200, 200)
+                        .load(R.drawable.map_icon)
+                        .submit(300, 300)
                     val bitmap = futureTarget.get()
                     PointAnnotationOptions().apply {
                         withPoint(com.mapbox.geojson.Point.fromLngLat(point.longitude,
@@ -144,8 +144,8 @@ class BaseMapFragment : Fragment() {
                             "Open Sans Regular"
                           )
                         )*/
-                        withTextOffset(listOf(0.0, 3.0))
-                        withTextSize(14.0)
+                        withTextOffset(listOf(0.0, 2.0))
+                        withTextSize(16.0)
                         withTextField(point.text)
                         withTextColor(Color.BLACK)
                         withTextHaloWidth(0.8)

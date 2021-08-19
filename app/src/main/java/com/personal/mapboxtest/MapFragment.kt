@@ -16,6 +16,22 @@ import com.mapbox.maps.plugin.animation.flyTo
 import com.mapbox.maps.plugin.annotation.generated.OnPointAnnotationClickListener
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotation
 import kotlin.random.Random
+import androidx.annotation.NonNull
+
+import com.mapbox.maps.extension.style.layers.generated.LineLayer
+
+import com.mapbox.maps.extension.style.sources.generated.GeoJsonSource
+
+import com.mapbox.maps.extension.style.layers.generated.SymbolLayer
+
+import com.mapbox.geojson.FeatureCollection
+
+import android.R
+
+import android.graphics.BitmapFactory
+
+import com.mapbox.maps.MapboxMap
+
 
 class MapFragment : Fragment(), OnPointAnnotationClickListener {
 
@@ -31,7 +47,7 @@ class MapFragment : Fragment(), OnPointAnnotationClickListener {
 
 
     private val mapFragment: BaseMapFragment by lazy {
-        childFragmentManager.findFragmentById(R.id.map_fragment) as BaseMapFragment
+        childFragmentManager.findFragmentById(com.personal.mapboxtest.R.id.map_fragment) as BaseMapFragment
     }
 
 
@@ -49,7 +65,7 @@ class MapFragment : Fragment(), OnPointAnnotationClickListener {
         savedInstanceState: Bundle?,
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_map, container, false)
+        return inflater.inflate(com.personal.mapboxtest.R.layout.fragment_map, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -62,6 +78,8 @@ class MapFragment : Fragment(), OnPointAnnotationClickListener {
                     .zoom(15.0)
                     .build(), null)
             addMapsElements()
+
+
         }
 
     }

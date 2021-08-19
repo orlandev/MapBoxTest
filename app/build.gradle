@@ -45,15 +45,15 @@ dependencies {
     implementation "com.mapbox.navigation:android:2.0.0-beta.22"
 
     // Mapbox (Maps)
-    implementation 'com.mapbox.maps:android:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-annotation:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-locationcomponent:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-gestures:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-compass:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-animation:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-scalebar:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-logo:10.0.0-rc.5'
-    implementation 'com.mapbox.plugin:maps-attribution:10.0.0-rc.5'
+    implementation 'com.mapbox.maps:android:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-annotation:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-locationcomponent:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-gestures:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-compass:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-animation:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-scalebar:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-logo:10.0.0-rc.6'
+    implementation 'com.mapbox.plugin:maps-attribution:10.0.0-rc.6'
 
     // Coroutines
 
